@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Room Loader
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -51,6 +50,15 @@ TagManager:
   - name: Objects
     uniqueID: 3098310811
     locked: 0
-  - name: Player
+  - name: Characters
     uniqueID: 464105917
+    locked: 0
+  - name: Battle Background
+    uniqueID: 4051215931
+    locked: 0
+  - name: Battle Enemy
+    uniqueID: 522274277
+    locked: 0
+  - name: Battle UI
+    uniqueID: 688569645
     locked: 0
