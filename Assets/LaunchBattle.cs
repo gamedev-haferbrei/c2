@@ -9,6 +9,8 @@ public class LaunchBattle : MonoBehaviour
 
     GameObject playerInRange = null;
 
+    [SerializeField] GameObject enemyToLoad;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -35,6 +37,7 @@ public class LaunchBattle : MonoBehaviour
         if (playerInRange != null)
         {
             Globals.playerPositionBeforeBattle = playerInRange.transform.position;
+            Globals.enemyToLoad = enemyToLoad;
             SceneManager.LoadScene("Battle");
         }
     }
