@@ -9,7 +9,7 @@ public class RoomLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rooms = GetComponentsInChildren<Room>();
+        rooms = GetComponentsInChildren<Room>(includeInactive: true);
     }
 
     public void LoadRoom(Room room)

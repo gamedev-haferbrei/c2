@@ -13,7 +13,7 @@ public class RoomTransition : MonoBehaviour
     void Start()
     {
         roomLoader = GetComponentInParent<RoomLoader>();
-        room = GetComponentInParent<Room>(includeInactive: true);
+        room = target.GetComponentInParent<Room>(includeInactive: true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
