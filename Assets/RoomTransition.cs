@@ -7,11 +7,13 @@ public class RoomTransition : MonoBehaviour
     [SerializeField] Transform target;
 
     RoomLoader roomLoader;
+    Room room;
 
     // Start is called before the first frame update
     void Start()
     {
-        roomLoader = GameObject.FindWithTag("Room Loader").GetComponent<RoomLoader>();
+        roomLoader = GetComponentInParent<RoomLoader>();
+        room = GetComponentInParent<Room>(includeInactive: true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +21,7 @@ public class RoomTransition : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerWarp>().WarpTo(target.position);
-            roomLoader.LoadRoom(collision.gameObject.GetComponentInParent<Room>(includeInactive: true));
+            roomLoader.LoadRoom(room);
         }
     }
 
