@@ -14989,6 +14989,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5770388618725074830, guid: b4428e034e08da34899b348a7f31fa43, type: 3}
       propertyPath: m_Name
+      value: Wolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770388618725074830, guid: b4428e034e08da34899b348a7f31fa43, type: 3}
+      propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []

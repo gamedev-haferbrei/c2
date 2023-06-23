@@ -1272,6 +1272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textGO: {fileID: 1937865575}
+  enemyGO: {fileID: 1732308775}
   isDefending: 0
   isCharging: 0
   playerHP: 0
