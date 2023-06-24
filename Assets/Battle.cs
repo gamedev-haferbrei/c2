@@ -110,12 +110,6 @@ public class Battle : MonoBehaviour
         }
     }
 
-    void Awake()
-    {
-        //Debug.Log(Globals.enemyClone);
-        //Debug.Log(Globals.enemyToLoad);
-        animator = Globals.enemyToLoad.GetComponent<Animator>();
-    }
     // Start is called before the first frame update
     void Start()
     {
@@ -123,9 +117,7 @@ public class Battle : MonoBehaviour
         playerHP = 10;
         enemyHP = 10;
         text = textGO.GetComponent<TextMeshProUGUI>();
-        //animator = Globals.enemyClone.GetComponent<Animator>();  // Cant get the reference to the actual enemy GO  
-        //Debug.Log(animator.name); 
-
+        animator = Globals.enemyClone.GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
