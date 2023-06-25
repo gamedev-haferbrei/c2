@@ -5,21 +5,28 @@ using UnityEngine;
 public class RoomLoader : MonoBehaviour
 {
     Room[] rooms;
+    [SerializeField] GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
+        Transform playerPos = player.GetComponent<Transform>();
         rooms = GetComponentsInChildren<Room>(includeInactive: true);
-        Debug.Log("Roomloader 1" + Globals.roomBeforeBattle); ///////////////////////......
-        Debug.Log("Roomloader 1" + Globals.playerPositionBeforeBattle); 
+ 
         if (Globals.roomBeforeBattle != null)
         {
-            LoadRoom(Globals.roomBeforeBattle);
+            foreach (Room room in rooms)
+            {
+                if (room.name == Globals.roomBeforeBattle)
+                {
+                    LoadRoom(room);
+                    playerPos.transform.position = Globals.playerPositionBeforeBattle;
+                }
+            }
             Globals.roomBeforeBattle = null;
-            Debug.Log("Roomloader 2" + Globals.roomBeforeBattle);
-            
-        } ///////////////////////////////////////////////......
-            
+             
+        }
+           
     }
 
     public void LoadRoom(Room room)

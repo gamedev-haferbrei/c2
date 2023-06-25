@@ -52,7 +52,6 @@ public class Battle : MonoBehaviour
     
     public void Run()
     {
-        Debug.Log("Run " + Globals.roomBeforeBattle); /////////////////////////////////////////////
         SceneManager.LoadScene("Main"); // TODO return to previous pos not to start
     }
 
@@ -125,7 +124,6 @@ public class Battle : MonoBehaviour
     {
         foreach (Button button in buttons)
         {
-            Debug.Log(button);
             button.interactable = !button.interactable;
         }
     }
