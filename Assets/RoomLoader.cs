@@ -10,6 +10,16 @@ public class RoomLoader : MonoBehaviour
     void Start()
     {
         rooms = GetComponentsInChildren<Room>(includeInactive: true);
+        Debug.Log("Roomloader 1" + Globals.roomBeforeBattle); ///////////////////////......
+        Debug.Log("Roomloader 1" + Globals.playerPositionBeforeBattle); 
+        if (Globals.roomBeforeBattle != null)
+        {
+            LoadRoom(Globals.roomBeforeBattle);
+            Globals.roomBeforeBattle = null;
+            Debug.Log("Roomloader 2" + Globals.roomBeforeBattle);
+            
+        } ///////////////////////////////////////////////......
+            
     }
 
     public void LoadRoom(Room room)

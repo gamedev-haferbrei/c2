@@ -36,6 +36,8 @@ public class LaunchBattle : MonoBehaviour
     {
         if (playerInRange != null)
         {
+            if (Globals.roomBeforeBattle == null) { Globals.roomBeforeBattle = GetComponentInParent<Slime>().GetComponentInParent<Room>(); } ///////////////////
+            Debug.Log("LaunchBattle " + Globals.roomBeforeBattle.name); ///////////////////////////////////
             Globals.playerPositionBeforeBattle = playerInRange.transform.position;
             Globals.enemyToLoad = enemyToLoad;
             SceneManager.LoadScene("Battle");
