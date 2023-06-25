@@ -20,12 +20,11 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMipmapLimit: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -43,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  swizzle: 50462976
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -117,7 +115,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Chicken Head
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 187
+        width: 186
+        height: 215
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a662dbce6958840957d82cd501cdcb
+      internalID: 208538842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Right Eye
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 328
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c308bef65849dc9498d0294a06e00d49
+      internalID: -1318079316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Left Eye
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 325
+        width: 50
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242252bc14aa4d540a14d8e42148e668
+      internalID: -1378835743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Beak
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 252
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61b904eb4ce39b4ba1edb3e498515a7
+      internalID: -1098297934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Left Wing
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 20
+        width: 100
+        height: 150
+      alignment: 9
+      pivot: {x: 0.7616275, y: 0.29069778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca0504b215a8b1408e4e8f6e242cfd5
+      internalID: -732087598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Right Wing
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 21
+        width: 100
+        height: 150
+      alignment: 9
+      pivot: {x: 0.2514528, y: 0.2819768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85bc100718fe7a34fbc5f44c42e664c2
+      internalID: -1061104906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Right Leg
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 122
+        width: 66
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4207181, y: 0.82703483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ecf20a0a3ebe445a48afe2817c75da
+      internalID: -1094178104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chicken Left Leg
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 34
+        width: 69
+        height: 55
+      alignment: 9
+      pivot: {x: 0.5947925, y: 0.8329813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e45ce95f51b5d1478ed029bf2358fce
+      internalID: -1724459117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,9 +294,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
-  mipmapLimitGroupName: 
+    nameFileIdTable:
+      Chicken Beak: -1098297934
+      Chicken Head: 208538842
+      Chicken Left Eye: -1378835743
+      Chicken Left Leg: -1724459117
+      Chicken Left Wing: -732087598
+      Chicken Right Eye: -1318079316
+      Chicken Right Leg: -1094178104
+      Chicken Right Wing: -1061104906
+  spritePackingTag: 
   pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
